@@ -5,7 +5,7 @@
         "definitions": {
         "Arn": {
             "type": "string",
-            "maxLength": 1000,
+            "maxLength": 2048,
             "pattern": "(^arn:[a-z\\d-]+:rekognition:[a-z\\d-]+:\\d{12}:project\/[a-zA-Z0-9_.\\-]{1,255}\/[0-9]+$)"
         },
         "ProjectName": {
