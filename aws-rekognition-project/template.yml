@@ -21,4 +21,3 @@ Resources:
       Handler: software.amazon.rekognition.project.HandlerWrapper::testEntrypoint
       Runtime: java8
       CodeUri: ./target/aws-rekognition-project-handler-1.0-SNAPSHOT.jar
-

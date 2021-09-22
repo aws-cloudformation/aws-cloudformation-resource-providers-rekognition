@@ -31,7 +31,7 @@ public class DeleteHandler extends BaseHandler<CallbackContext> {
         DescribeProjectsRequest describeProjectsRequest = null;
         Optional<ProjectDescription> projectToDelete;
         String nextToken = null;
-        
+
         final ResourceModel model = request.getDesiredResourceState();
         RekognitionClient rekognitionClient = RekognitionClient.create();
 
@@ -56,7 +56,7 @@ public class DeleteHandler extends BaseHandler<CallbackContext> {
             logger.log(resourceNotFoundException.getMessage());
             throw resourceNotFoundException;
         }
-        
+
         DeleteProjectRequest deleteProjectRequest = DeleteProjectRequest.builder()
                 .projectArn(projectToDelete.get().projectArn())
                 .build();

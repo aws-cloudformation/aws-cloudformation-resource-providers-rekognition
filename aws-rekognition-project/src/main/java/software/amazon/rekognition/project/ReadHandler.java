@@ -22,7 +22,7 @@ public class ReadHandler extends BaseHandler<CallbackContext> {
         final ResourceHandlerRequest<ResourceModel> request,
         final CallbackContext callbackContext,
         final Logger logger) {
-            
+
         DescribeProjectsResponse describeProjectsResponse = null;
         DescribeProjectsRequest describeProjectsRequest = null;
         Optional<ProjectDescription> projectToRead;

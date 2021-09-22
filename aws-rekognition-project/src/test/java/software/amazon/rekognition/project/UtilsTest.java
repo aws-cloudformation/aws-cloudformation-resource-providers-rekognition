@@ -43,7 +43,7 @@ public class UtilsTest {
 
         // act
         Optional<ProjectDescription> projectDescription = Utils.findProjectByNameInResponse(describeProjectsResponse, projectName);
-        
+
         // assert
         assertEquals(true, projectDescription.isPresent());
         assertEquals(projectName, Utils.getProjectNameFromArn(projectDescription.get().projectArn()));
@@ -61,7 +61,7 @@ public class UtilsTest {
 
         // act
         Optional<ProjectDescription> projectDescription = Utils.findProjectByNameInResponse(describeProjectsResponse, projectName);
-        
+
         // assert
         assertEquals(false, projectDescription.isPresent());
     }
@@ -82,7 +82,7 @@ public class UtilsTest {
 
         // act
         Optional<ProjectDescription> projectDescription = Utils.findProjectByNameInResponse(describeProjectsResponse, projectName2);
-        
+
         // assert
         assertEquals(false, projectDescription.isPresent());
     }

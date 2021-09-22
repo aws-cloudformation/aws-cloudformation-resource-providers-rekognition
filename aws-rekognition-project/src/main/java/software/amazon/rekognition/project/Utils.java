@@ -13,7 +13,7 @@ public class Utils {
     }
 
     static Optional<ProjectDescription> findProjectByNameInResponse(DescribeProjectsResponse describeProjectsResponse,
-                                                                    final String projectName) 
+                                                                    final String projectName)
     {
         return describeProjectsResponse.projectDescriptions().stream()
                 .filter(projectDescription -> Utils.getProjectNameFromArn(projectDescription.projectArn()).equals(projectName))

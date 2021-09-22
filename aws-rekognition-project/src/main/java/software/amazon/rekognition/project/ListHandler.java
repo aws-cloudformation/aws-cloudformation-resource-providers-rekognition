@@ -27,7 +27,7 @@ public class ListHandler extends BaseHandler<CallbackContext> {
         DescribeProjectsResponse describeProjectsResponse = null;
         DescribeProjectsRequest describeProjectsRequest = null;
         String nextToken = null;
-        
+
         RekognitionClient rekognitionClient = RekognitionClient.create();
 
         do {

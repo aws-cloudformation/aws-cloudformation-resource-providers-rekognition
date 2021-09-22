@@ -106,7 +106,7 @@ public class UpdateHandlerTest {
     @Test
     public void test_UpdateHandler_ShouldFail_WhenProjectDoesNotExist_And_NoProjectInAccount() {
         // Arrange
-        final String projectName = "projectName";        
+        final String projectName = "projectName";
         List<ProjectDescription> projects = new ArrayList<>();
 
         DescribeProjectsResponse describeProjectsResponse = DescribeProjectsResponse.builder()
