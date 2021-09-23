@@ -1,0 +1,7 @@
+{
+  "desiredResourceState": {
+    "Title": "test"
+  },
+  "previousResourceState": {},
+  "logicalResourceIdentifier": "MyResource"
+}
