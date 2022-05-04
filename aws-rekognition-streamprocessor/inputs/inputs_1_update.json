@@ -1,0 +1,37 @@
+{
+  "Name": "TestConnectedHomeStreamProcessor1",
+  "RoleArn": "{{CFNStreamProcessorRoleArn}}",
+  "KinesisVideoStream": {
+    "Arn": "{{CFNKinesisVideoStreamArn}}"
+  },
+  "ConnectedHomeSettings": {
+    "Labels": [
+      "PERSON"
+    ],
+    "MinConfidence": 50
+  },
+  "S3Destination": {
+    "BucketName": "{{CFNStreamProcessorS3BucketName}}"
+  },
+  "NotificationChannel": {
+    "Arn": "{{CFNStreamProcessorSNSArn}}"
+  },
+  "BoundingBoxRegionsOfInterest": [
+    {
+      "Height": 0.4,
+      "Width": 0.2,
+      "Left": 0.1,
+      "Top": 0.5
+    }
+  ],
+  "Tags": [
+    {
+      "Key": "Tag1",
+      "Value": "Value1"
+    },
+    {
+      "Key": "Tag2",
+      "Value": "Value2"
+    }
+  ]
+}

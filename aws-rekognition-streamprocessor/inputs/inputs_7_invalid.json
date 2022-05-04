@@ -1,0 +1,16 @@
+{
+  "Name": "TestFaceSearchStreamProcessor7",
+  "RoleArn": "{{CFNStreamProcessorRoleArn}}",
+  "KinesisVideoStream": {
+    "Arn": "{{CFNKinesisVideoStreamArn}}"
+  },
+  "FaceSearchSettings": {
+    "CollectionId": "{{CFNRekognitionCollectionId}}"
+  },
+  "S3Destination": {
+    "BucketName": "{{CFNStreamProcessorS3BucketName}}"
+  },
+  "NotificationChannel": {
+    "Arn": "{{CFNStreamProcessorSNSArn}}"
+  }
+}
