@@ -1,0 +1,13 @@
+{
+  "Name": "TestFaceSearchStreamProcessor2",
+  "RoleArn": "{{CFNStreamProcessorRoleArn}}",
+  "KinesisVideoStream": {
+    "Arn": "{{CFNKinesisVideoStreamArn}}"
+  },
+  "FaceSearchSettings": {
+    "CollectionId": "{{CFNRekognitionCollectionId}}"
+  },
+  "KinesisDataStream": {
+    "Arn": "{{CFNKinesisStreamArn}}"
+  }
+}
