@@ -1,0 +1,43 @@
+{
+  "Name": "TestFaceSearchStreamProcessor7",
+  "RoleArn": "{{CFNStreamProcessorRoleArn}}",
+  "KinesisVideoStream": {
+    "Arn": "{{CFNKinesisVideoStreamArn}}"
+  },
+  "FaceSearchSettings": {
+    "CollectionId": "{{CFNRekognitionCollectionId}}"
+  },
+  "KinesisDataStream": {
+    "Arn": "{{CFNKinesisStreamArn}}"
+  },
+  "PolygonRegionsOfInterest": [
+    [
+      {
+        "X": 0.1,
+        "Y": 0.2
+      },
+      {
+        "X": 0.2,
+        "Y": 0.3
+      },
+      {
+        "X": 0.3,
+        "Y": 0.1
+      },
+      {
+        "X": 0.4,
+        "Y": 0.2
+      }
+    ]
+  ],
+  "Tags" : [
+    {
+      "Key" : "Tag1",
+      "Value" : "Value1"
+    },
+    {
+      "Key" : "Tag2",
+      "Value" : "Value2"
+    }
+  ]
+}

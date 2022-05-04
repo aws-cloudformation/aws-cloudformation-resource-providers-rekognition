@@ -1,0 +1,14 @@
+{
+    "Name": "TestFaceSearchStreamProcessor2",
+    "RoleArn": "{{CFNStreamProcessorRoleArn}}",
+    "KinesisVideoStream": {
+        "Arn": "{{CFNKinesisVideoStreamArn}}"
+    },
+    "FaceSearchSettings": {
+        "CollectionId": "{{CFNRekognitionCollectionId}}"
+    },
+    "KinesisDataStream": {
+        "Arn": "{{CFNKinesisStreamArn}}"
+    },
+    "Arn": "arn:aws:rekognition:us-east-1:123456789012:streamprocessor/TestFaceSearchStreamProcessor2"
+}

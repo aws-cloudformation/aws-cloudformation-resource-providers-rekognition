@@ -1,0 +1,20 @@
+{
+    "Name": "TestConnectedHomeStreamProcessor1",
+    "RoleArn": "{{CFNStreamProcessorRoleArn}}",
+    "KinesisVideoStream": {
+        "Arn": "{{CFNKinesisVideoStreamArn}}"
+    },
+    "ConnectedHomeSettings": {
+        "Labels": [
+            "PERSON",
+            "PACKAGE"
+        ]
+    },
+    "KinesisDataStream": {
+        "Arn": "{{CFNKinesisStreamArn}}"
+    },
+    "S3Destination": {
+        "BucketName": "{{CFNStreamProcessorS3BucketName}}",
+        "ObjectKeyPrefix": "random/prefix/"
+    }
+}
